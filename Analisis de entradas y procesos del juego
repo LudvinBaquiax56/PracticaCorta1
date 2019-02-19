@@ -1,0 +1,42 @@
+Analisis
+Juego entero
+Menu de 4 juegos y una salida
+Instruciones
+
+Ahorcado
+Ingresar palabara
+Mostrar concidencia de letras
+Terminar cuando el dibujo completado
+
+Baloncesto 
+Juego con dos jugadores
+Ataque y defensa
+	Pedir nombres(Letras)
+	Pedir cantidad de movimientos
+	Orden aleatorio para incial el juego
+	
+	Tipos de lanzamientos
+	5 metros 3 puntos 65%
+	3 metros 2 puntos 80%
+	Tiro libre 2 puntos 90%
+
+	Defensa 
+	cuerpo a cuerpo resta 15% posibilidad de falta 35%
+	Defensa fuerte resta 30% posibilidad de falta 65%
+
+Juego de cartas
+Ingresar nombre(letras)
+Ingresar dineros(numero)
+	Dar dos valores de cartas aleatorias entre 2 y 14
+	Dar un numero aleatorio entre 2 y 14
+	verificar si el tercer numero aletorio esta entre las primeras dos cartas
+	Terminar el juego cuando el dinero es = 0
+
+Juego Hanoi
+	Un movimiento por disco
+	un disco grande no puede estar en uno mas chico
+	3 varillas para poder colocar los discos
+	cuando el juego termine mostrar la cantidad de movimientos realizados
+	
+
+para todos los juegos tener un submenu 

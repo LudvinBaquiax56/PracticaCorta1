@@ -1,0 +1,73 @@
+Inicio juegoCartas
+
+var opcion
+var regresar 
+
+mientras (!salir)
+
+escribir Elige una opciòn con el numero que desees
+escribir 1.Jugar
+Escribir 2.Regresar
+
+cuandointeruptor(opcion)
+	caso 1:
+	escribir Bienvenido al juego de cartas
+                    var cantidadCarta
+                    var rangoMenor
+                    var rangoMayor
+                    var apuestaInicial
+                    var nombre
+
+                    cantidadCarta = 2
+                    rangoMenor = 2
+                    rangoMayor = 14
+
+                    Escribir Ingrese su Nombre
+                    leer nombre
+                    Escribir Ingrese su apuesta inicial
+                    leer apuestaInicial 
+
+                    si (0 < apuestaInicial) 
+                        mientras (0 < apuestaInicial)
+                            areglo var guardarCartas[cantidadCartas]
+                            
+                            Escribir Jugador: + nombre
+                            Escribir Dinero: + apuestaInicial
+                            mientras (var i = 1; i <= cantidadCarta; i++) 
+                                var valorCarta = aleatorio(entre rangoMayor-RangoMenor)
+                                guardarCartas[i - 1] = valorCarta
+                                escribir La carta + i
+                                escribir +guardarCartas[i - 1]
+                            var apuesta
+                            escribir Ingrese su apuesta
+                            leer apuesta
+                            si (apuesta <= apuestaInicial)
+                                var cartaResultado = aleatorio(entre rangoMayor - rangoMenor)
+                                EscribirTu carta es  + cartaResultado
+                                si (cartaResultado <= guardarCartas[0]) 
+                                    si (guardarCartas[1] <= cartaResultado) 
+                                        Escribir Ganaste
+                                        apuestaInicial = apuestaInicial + apuesta
+                                        Escribir Tu dinero es + apuestaInicial
+                                    sino
+                                        escribir Has Perdido
+                                        apuestaInicial = apuestaInicial - apuesta;
+                                        Escribir Tu dinero es + apuestaInicial
+                                    fin si
+                                sino
+                                    escribir Has Perdido
+                                    apuestaInicial = apuestaInicial - apuesta;
+                                    escribir Tu dinero es + apuestaInicial
+                                fin si
+                            sino
+                                Escribir No pueddes hacer esta apuesta, no tienes esa cantidad de dinero
+                            fin si
+                        fin mientras
+                    finsi
+        caso 2:
+        regresar = verdadero //aqui damos como valor verdadero y termina con el while
+    	caso diferente:
+	Escribir Opcion invalida, vuelve a elegir
+fin cuandointeruptor            
+finmientras 
+fin

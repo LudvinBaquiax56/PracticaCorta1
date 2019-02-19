@@ -1,0 +1,38 @@
+Inicio Menu
+
+var opcion
+var salir  
+
+mientras (!salir)
+
+escribir Elige una opciòn con el numero que desees
+escribir 1.Juego del ahorcado
+Escribir 2.Baloncesto
+Escribir 3.Juego de cartas
+Escribir 4.Hanoi
+Escribir 5.Descripción de juegos
+Escribir 6.Salir
+
+Escribir Haz elegido la opccion  +opccion
+
+cuandointeruptor(opcion)
+	caso 1:
+	llamar Juego ahorcado
+        caso 2:
+        llamar juego baloncesto
+        caso 3:
+        llamar cartas
+        caso 4:
+        llmar hanoi
+        caso 5:
+        llamar descripcion
+        caso 6:
+        salir = verdadero //aqui damos como valor verdadero y termina con el while
+    	caso diferente
+	Escribir Opcion invalida, vuelve a elegir
+fin cuandointeruptor            
+
+finmientras 
+
+
+fin
